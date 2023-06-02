@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Zingos</string>
+    <string name="open_nav">Menu abierto</string>
+    <string name="close_nav">Menu cerrado</string>
+    <string name="menu_solicitante">En Zingos encuentras cualquier tipo de servicio que busques y con la mejor calidad posible, no esperes mas contrara a uno de nuestros especialisats y con gusto te atenderan</string>
+    <string name="menu_prestador">Bienvenido a la familia Zingos, puedes publicar tus servicios y solo esperar a que algun cliente te solicite.</string>
+
+    <string-array name="tiposUsuario">
+        <item>Solicitante</item>
+        <item>Prestador</item>
+    </string-array>
+
+    <string-array name="categoriasServicios">
+        <item>Asesorias</item>
+        <item>Tecnologia</item>
+        <item>Mantenimiento</item>
+        <item>Automotriz</item>
+        <item>Administracion y Logistica</item>
+        <item>Salud</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

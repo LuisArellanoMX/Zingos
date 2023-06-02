@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1"
+    tools:context="com.zingos.fragments.crear_servicios">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        tools:layout_editor_absoluteX="40dp"
+        app:cardElevation="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:gravity="center"
+            android:background="@drawable/lavender_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear servicio"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/baseline_post_add_24"
+                android:id="@+id/updateImage"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:scaleType="fitXY"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_nom_servicio"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Nombre del servicio"
+                android:gravity="start|center_vertical"
+                android:drawableLeft="@drawable/baseline_home_repair_service_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/lavender"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_horario"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Horario de atencion"
+                android:gravity="start|center_vertical"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/lavender"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ubicacion"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Ubicaion"
+                android:gravity="start|center_vertical"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/lavender"/>
+
+            <Spinner
+                android:id="@+id/sp_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:entries="@array/categoriasServicios"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_descripcion"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Descripcion"
+                android:gravity="start|center_vertical"
+                android:drawableLeft="@drawable/baseline_description_24"
+                android:drawablePadding="8dp"
+                android:textColor="@color/lavender"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Crear"
+                android:id="@+id/btn_crear"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fondo_botones"
+                android:textColor="@color/white"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>

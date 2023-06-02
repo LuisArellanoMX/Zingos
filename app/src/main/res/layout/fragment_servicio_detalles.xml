@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1"
+    tools:context="com.zingos.fragments.servicio_detalles">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        tools:layout_editor_absoluteX="40dp"
+        app:cardElevation="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/lavender_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalles Servicio"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/uploadimg" />
+
+            <TextView
+                android:id="@+id/et_nom_servicio_t"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:padding="1dp"
+                android:text="Nombre del servicio"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_nom_servicio"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Nombre del servicio"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/et_horario_t"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="12dp"
+                android:padding="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Horario de atencion"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_horario"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Horario"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/et_ubicacion_t"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="12dp"
+                android:padding="1dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="Ubicaion"
+                android:textSize="20sp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ubicacion"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Ubicaion"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:id="@+id/sp_categoria_t"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:padding="1dp"
+                android:text="Categoria"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/lavender"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/lavender_border"
+                />
+            <TextView
+                android:id="@+id/sp_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:text="Categoria"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/et_descripcion_t"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="12dp"
+                android:padding="1dp"
+                android:text="Descripcion"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_descripcion"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Descripcion"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/et_usuario_t"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="12dp"
+                android:padding="1dp"
+                android:text="Ofrecido por"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_usuario"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Usuario"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/et_telefono_t"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="12dp"
+                android:padding="1dp"
+                android:text="Telefono"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_telefono"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Telefono"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/et_correo_t"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="12dp"
+                android:padding="1dp"
+                android:text="Correo"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_correo"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Correo"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/lavender"/>
+
+
+        <LinearLayout
+            android:id="@+id/ly_botones"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:id="@+id/btn_editar"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center|center"
+                android:text="Editar"
+                android:textColor="@color/white"
+                android:background="@drawable/fondo_botones"/>
+
+            <Button
+                android:id="@+id/btn_eliminar"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="80dp"
+                android:text="Eliminar"
+                android:gravity="center|center"
+                android:textColor="@color/white"
+                android:background="@drawable/fondo_botones"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>
